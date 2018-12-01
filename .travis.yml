@@ -1,7 +1,8 @@
 language: generic
 
-before_script:
-  - apt update && apt install -y mtr
+before_install:
+  - sudo apt-get update
+  - sudo apt-get install -y mtr
 
 script:
   bash mtr.sh
